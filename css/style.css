@@ -52,6 +52,10 @@ p{
     font-size: 1.03rem;
     border-radius: var(--radius-md);
 }
+.btn:hover{
+    border-color: inherit;
+    background-color: inherit;
+}
 .btn-primary{
     background-color: var(--theme-blue);
 }
@@ -191,6 +195,17 @@ p{
     border-right: 80px solid transparent;
 }
 
+.shape-cutout-top{
+    padding-top: 2rem;
+    mask-image: radial-gradient(circle 20px at 50% 0%, transparent 30px, #000 0);
+    -webkit-mask-image: radial-gradient(circle 20px at 50% 0%, transparent 30px, #000 0);
+}
+
+.shape-cutout-bottom{
+    padding-bottom: 2rem;
+    mask-image: radial-gradient(circle 20px at 50% 100%, transparent 30px, #000 0);
+    -webkit-mask-image: radial-gradient(circle 20px at 50% 100%, transparent 30px, #000 0);
+}
 /* Common Classes - Ends */
 
 

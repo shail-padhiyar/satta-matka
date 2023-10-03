@@ -206,6 +206,20 @@ p{
     mask-image: radial-gradient(circle 20px at 50% 100%, transparent 30px, #000 0);
     -webkit-mask-image: radial-gradient(circle 20px at 50% 100%, transparent 30px, #000 0);
 }
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
 /* Common Classes - Ends */
 
 
@@ -243,6 +257,7 @@ p{
     100% {color: var(--white);}
 }
 /* Titles - Ends */
+
 
 
 

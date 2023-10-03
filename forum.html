@@ -19,9 +19,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Datepicker -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-
     <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -90,435 +87,453 @@
 
             <div class="row justify-content-center">
                 <div class="col-xl-4 col-lg-5 col-md-6 mb-3">
-                    <div class="bg-blur p-3 radius-md shape-cutout-top shape-cutout-bottom">
+                    <div class="bg-blur px-3 radius-md shape-cutout">
                         
-                        <form class="row mb-3">
+                        <div class="row mb-3">
                             <div class="col-5 d-flex align-items-center">
                                 <div class="title">
                                     <h2 class="color-turquoise">Start Date:</h2>
                                 </div>
                             </div>    
                             <div class="col-7">
-                                <div class="input-group date" id="datepicker">
-                                    <input type="text" class="form-control radius-md" id="date"/>
-                                    <span class="input-group-append"></span>
-                                </div>
+                                <input class="form-control custom-date-picker" type="date" id="startDate" aria-label="date picker">
                             </div>
-                        </form>
-
-                        
-                        <div class="col-6 d-flex">
-                            <input class="form-control" type="date" placeholder="" aria-label="date picker">
                         </div>
-                    
 
-                    </div>
-                </div>
-            </div>
-
-            <!-- Blue corner Title box -->
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6 my-4">
-                    <div class="bg-triangular-shape">
-                        <div class="title">
-                            <h2 class="text-white">Kalyan Morning Matka Guessing</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6 mb-3">
-                    <div class="bg-blur p-3 radius-md">
-                        <p class="mb-2">Open:</p>
                         <div class="row mb-3">
-                            <div class="col-md-12 d-flex">
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">6</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">1</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">5</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">8</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="mb-2">Open Panna:</p>
-                        <div class="row mb-3">
-                            <div class="col-md-12 d-flex">
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">358</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">236</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">357</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">234</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="mb-2">Jodi:</p>
-                        <div class="row mb-3">
-                            <div class="col-md-12 d-flex">
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">65</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">10</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">53</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">83</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="mb-2">Close:</p>
-                        <div class="row mb-3">
-                            <div class="col-md-12 d-flex">
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">3</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1 active">
-                                    <p class="px-1">1</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">7</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">9</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <a href="#" class="btn btn-primary btn-sm mt-2">
-                                    Close Pass-01
-                                </a>
-                            </div>
-                        </div>
-
-                        <p class="mb-2">Close Panna:</p>
-                        <div class="row">
-                            <div class="col-md-12 d-flex">
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">490</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">128</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">340</p>
-                                </div>
-                                <div class="bg-blur p-1 radius-md border-0 me-1">
-                                    <p class="px-1">180</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Title Box -->
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6 my-3">
-                    <div class="bg-blur px-3 py-2 radius-md">
-                        <div class="title text-center">
-                            <h2 class="text-white">Matka Guessing</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Blue corner Title box -->
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6 my-3">
-                    <div class="bg-triangular-shape">
-                        <div class="title">
-                            <h2 class="text-white">Matka Result</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hexagone boxes -->
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6 mb-3">
-                    <div class="row">
-                        <div class="col-6 text-center">
-                            <div class="hexagon-box">
-                                <p class="fw-semibold">Time Bazar</p>
-                                <p class="my-2">357-59-234</p>
-                                <p class="extra-small">(01:00:00--03:15:00)</p>
-                            </div>
-                        </div>
-
-                        <div class="col-6 text-center">
-                            <div class="hexagon-box">
-                                <p class="fw-semibold">Milan Day</p>
-                                <p class="my-2">440-87-557</p>
-                                <p class="extra-small">(01:00:00--03:15:00)</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 text-center">
-                            <div class="hexagon-box my-0">
-                                <p class="fw-semibold">Kalyan</p>
-                                <p class="my-2">567-95-357</p>
-                                <p class="extra-small">(01:00:00--03:15:00)</p>
-                            </div>
-                        </div>
-
-                        <div class="col-6 text-center">
-                            <div class="hexagon-box">
-                                <p class="fw-semibold">Rajdhani Day</p>
-                                <p class="my-2">136-07-467</p>
-                                <p class="extra-small">(01:00:00--03:15:00)</p>
-                            </div>
-                        </div>
-
-                        <div class="col-6 text-center">
-                            <div class="hexagon-box">
-                                <p class="fw-semibold">Rajdhani Day</p>
-                                <p class="my-2">136-07-467</p>
-                                <p class="extra-small">(01:00:00--03:15:00)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Blue corner Title box -->
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6 my-3">
-                    <div class="bg-triangular-shape">
-                        <div class="title">
-                            <h2 class="text-white">Matka Guessing Today</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Title Box -->
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6 my-3">
-                    <div class="bg-blur px-3 py-2 radius-md">
-                        <div class="title text-center">
-                            <h2 class="text-white">Matka Passing Record</h2>
-                            <p class="small">07/09/2023</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6 my-3">
-
-                    <div class="row">
-                        <div class="col-6 mb-4">
-                            <div class="bg-blur p-2 radius-md">
+                            <div class="col-5 d-flex align-items-center">
                                 <div class="title">
-                                    <h2 class="text-white mb-2">Rajdhani Day</h2>
-                                    <p class="small mb-3">Open</p>
-
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-blur p-2 radius-md border-0 me-2 d-inline-block">
-                                            <p class="px-1 d-inline-block">03</p>
-                                        </div>
-                                        <p class="small">Pass</p>
-                                    </div>
+                                    <h2 class="color-turquoise">End Date:</h2>
                                 </div>
+                            </div>    
+                            <div class="col-7">
+                                <input class="form-control custom-date-picker" type="date" id="endDate" aria-label="date picker">
                             </div>
                         </div>
 
-                        <div class="col-6 mb-4">
-                            <div class="bg-blur p-2 radius-md">
-                                <div class="title">
-                                    <h2 class="text-white mb-2">Rajdhani Day</h2>
-                                    <p class="small mb-3">Open Panna</p>
-
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-blur p-2 radius-md border-0 me-2 d-inline-block">
-                                            <p class="px-1 d-inline-block">689</p>
-                                        </div>
-                                        <p class="small">Pass</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-6 mb-4">
-                            <div class="bg-blur p-2 radius-md">
-                                <div class="title">
-                                    <h2 class="text-white mb-2">Kalyan</h2>
-                                    <p class="small mb-3">Open</p>
-
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-blur p-2 radius-md border-0 me-2 d-inline-block">
-                                            <p class="px-1 d-inline-block">01</p>
-                                        </div>
-                                        <p class="small">Pass</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-6 mb-4">
-                            <div class="bg-blur p-2 radius-md">
-                                <div class="title">
-                                    <h2 class="text-white mb-2">Milan Night</h2>
-                                    <p class="small mb-3">Close</p>
-
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-blur p-2 radius-md border-0 me-2 d-inline-block">
-                                            <p class="px-1 d-inline-block">00</p>
-                                        </div>
-                                        <p class="small">Pass</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6 my-4 bg-blur radius-md">
-                    <div class="pt-4 pb-3">
                         <div class="row">
-                            <div class="col-12 d-grid gap-2 mb-4">
-                                <div class="bg-primary p-3 radius-md">
-                                    <div class="title text-center">
-                                        <h2 class="text-white">Matka Guessing Chart</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 d-grid gap-2 mb-2">
-                                <a href="#" class="btn bg-blur text-white">
-                                    Sridevi Guessing
+                            <div class="col-6">
+                                <a href="#" class="btn triangular-shape-btn">
+                                    Show
                                 </a>
-                            </div>
-
-                            <div class="col-12 d-grid gap-2 mb-2">
-                                <a href="#" class="btn bg-blur text-white">
-                                    Time Bazar Guessing
-                                </a>
-                            </div>
-
-                            <div class="col-12 d-grid gap-2 mb-2">
-                                <a href="#" class="btn bg-blur text-white">
-                                    Milan Day Guessing
-                                </a>
-                            </div>
-
-                            <div class="col-12 d-grid gap-2 mb-2">
-                                <a href="#" class="btn bg-blur text-white">
-                                    Madhur Day Guessing
-                                </a>
-                            </div>
-
-                            <div class="col-12 d-grid gap-2 mb-2">
-                                <a href="#" class="btn bg-blur text-white">
-                                    Rajdhani Day Guessing
-                                </a>
-                            </div>
-
-                            <div class="col-12 d-grid gap-2 mb-2">
-                                <a href="#" class="btn bg-blur text-white">
-                                    Kalyan Guessing
+                            </div>    
+                            <div class="col-6">
+                                <a href="#" class="btn triangular-shape-btn">
+                                    Cancel
                                 </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6 my-4 bg-blur radius-md">
-                    <div class="pt-4 pb-3">
+                <div class="col-md-8">
+
+                    <ul class="nav nav-tabs nav-justified mb-3 border-0 custom-tabs-panel" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link active"
+                            id="ex3-tab-1"
+                            data-bs-toggle="tab"
+                            href="#tabs-panel1"
+                            role="tab"
+                            aria-controls="tabs-panel1"
+                            aria-selected="true"
+                            >Guessing</a
+                          >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link"
+                            id="ex3-tab-2"
+                            data-bs-toggle="tab"
+                            href="#tabs-panel2"
+                            role="tab"
+                            aria-controls="tabs-panel2"
+                            aria-selected="false"
+                            >Jodi</a
+                          >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link"
+                            id="ex3-tab-3"
+                            data-bs-toggle="tab"
+                            href="#tabs-panel3"
+                            role="tab"
+                            aria-controls="tabs-panel3"
+                            aria-selected="false"
+                            >Panel</a
+                          >
+                        </li>
+                      </ul>
+                      
+                      <div class="tab-content" id="ex2-content">
+                        <div class="tab-pane fade show active" id="tabs-panel1" role="tabpanel" aria-labelledby="tabs-panel-1">
                         <div class="row">
-                            <div class="col-12 d-grid gap-2 mb-4">
-                                <div class="bg-primary p-3 radius-md">
-                                    <div class="title text-center">
-                                        <h2 class="text-white">Panel Chart</h2>
+                            <div class="col-md-12 mb-3">
+                                <div class="bg-blur py-3 px-2 radius-md">
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <div class="bg-blur p-1 radius-sm border-0 me-1 d-inline-block">
+                                                <p class="px-1 extra-small">Date: 01-09-2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <div class="bg-blur p-1 radius-sm border-0 active d-inline-block">
+                                                <p class="px-1 extra-small">Close-07</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 d-flex justify-content-between mt-3">
+                                            <!-- Open -->
+                                            <div class="text-center d-flex flex-column">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1 extra-small">Open</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">06</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">02</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">03</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">00</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Open Panna -->
+                                            <div class="text-center d-flex flex-column">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1 extra-small">O.Panna</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">140</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">129</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">120</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">127</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Jodi -->
+                                            <div class="text-center d-flex flex-column">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1 extra-small">Jodi</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">60</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">29</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">37</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">60</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Close -->
+                                            <div class="text-center d-flex flex-column">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1 extra-small">Close</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block active">07</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">06</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">04</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">03</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Close Panna -->
+                                            <div class="text-center d-flex flex-column">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1 extra-small">C.Panna</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">124</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">123</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">103</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">130</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Result -->
+                                        <div class="col-md-12 d-flex justify-content-center align-items-center mt-3">
+                                            <div class="text-center px-1">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1">Result</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-center px-1">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1">6</p>
+                                                    <p class="px-1">0</p>
+                                                    <p class="px-1">2</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-center px-1">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block active">
+                                                    <p class="px-1">27</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-center px-1">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1">9</p>
+                                                    <p class="px-1">1</p>
+                                                    <p class="px-1">7</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Dummy class for reserve space -->
+                                            <div class="text-center px-1 invisible">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1">Result</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+            
+                                    
+            
                                 </div>
                             </div>
 
-                            <div class="col-12 d-grid gap-2 mb-2">
-                                <a href="#" class="btn bg-blur text-white">
-                                    Time Bazar Panel Chart
-                                </a>
-                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="bg-blur py-3 px-2 radius-md">
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <div class="bg-blur p-1 radius-sm border-0 me-1 d-inline-block">
+                                                <p class="px-1 extra-small">Date: 02-09-2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <div class="bg-blur p-1 radius-sm border-0 active d-inline-block">
+                                                <p class="px-1 extra-small">Close-07</p>
+                                            </div>
+                                        </div>
 
-                            <div class="col-12 d-grid gap-2 mb-2">
-                                <a href="#" class="btn bg-blur text-white">
-                                    Milan Day Panel Chart
-                                </a>
-                            </div>
+                                        <div class="col-md-12 d-flex justify-content-between mt-3">
+                                            <!-- Open -->
+                                            <div class="text-center d-flex flex-column">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1 extra-small">Open</p>
+                                                </div>
 
-                            <div class="col-12 d-grid gap-2 mb-2">
-                                <a href="#" class="btn bg-blur text-white">
-                                    Rajdhani Day Panel Chart
-                                </a>
-                            </div>
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">06</p>
+                                                </div>
 
-                            <div class="col-12 d-grid gap-2 mb-2">
-                                <a href="#" class="btn bg-blur text-white">
-                                    Kalyan Panel Chart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">02</p>
+                                                </div>
 
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6 my-4 bg-blur radius-md">
-                    <div class="pt-4 pb-3">
-                        <div class="row">
-                            <div class="col-12 d-grid gap-2 mb-4">
-                                <div class="bg-primary px-3 py-2 radius-md">
-                                    <div class="title text-center">
-                                        <h2 class="text-white">Satta Matta Matka: Free Matka Guessing & Matka tips to Win Matka Game Today</h2>
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">03</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">00</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Open Panna -->
+                                            <div class="text-center d-flex flex-column">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1 extra-small">O.Panna</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">140</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">129</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">120</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">127</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Jodi -->
+                                            <div class="text-center d-flex flex-column">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1 extra-small">Jodi</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">60</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">29</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">37</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">60</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Close -->
+                                            <div class="text-center d-flex flex-column">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1 extra-small">Close</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block active">07</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">06</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">04</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">03</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Close Panna -->
+                                            <div class="text-center d-flex flex-column">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1 extra-small">C.Panna</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">124</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">123</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">103</p>
+                                                </div>
+
+                                                <div>
+                                                    <p class="bg-blur py-1 px-2 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">130</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Result -->
+                                        <div class="col-md-12 d-flex justify-content-center align-items-center mt-3">
+                                            <div class="text-center px-1">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1">Result</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-center px-1">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1">6</p>
+                                                    <p class="px-1">0</p>
+                                                    <p class="px-1">2</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-center px-1">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block active">
+                                                    <p class="px-1">27</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-center px-1">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1">9</p>
+                                                    <p class="px-1">1</p>
+                                                    <p class="px-1">7</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Dummy class for reserve space -->
+                                            <div class="text-center px-1 invisible">
+                                                <div class="bg-blur p-1 radius-sm border-0 mx-sm-1 mb-2 d-inline-block">
+                                                    <p class="px-1">Result</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-12 d-grid gap-2 mb-2 px-4">
-                                <p class="small">Satta Matka or Satta Matta Matka or Satta is a form of Matka Lottery game. Kalyan Bhagat started his Satta Market in 1962 with Worli Matka. Matka is a game of guessing Matka numbers like Matka Jodi, Matka Patti, Matka Open, and Close. If you bid on a Matka number and it is the Matka Result of the day, you win the Matka game. Winning the Matka game with the highest bid makes you the Matka King!</p>
-
-                                <p class="small">SattaMatkaz - get fix Matka game, Sattamatka sure Matka numbers, fix Matka Jodi. Kalyan Matka, Matka Satta, Satta Matta Matka, Satta Batta, Satta M, Matka tricks & Matka tips today. Get the fastest Satta Results, Satta Guessing, Win Matka Game, and Recover Losses!</p>
-
-                                <p class="small">Sattamatka - Matka Guessing, Indian Matka, VIP Matka game, Matka Result, and Matka chart. Kalyan guessing, Kalyan Matka, Kalyan Satta, Satta Kalyan, Kalyan fix Jodi. Satta, Matka Jodi fix, sure Matka, Matka 420, Satta Matka 143, fix Satta, Matka Software. Final Ank, fix Satta Matka, Satta Live, daily Matka fix number, Matka Jadu & Matka tips.</p>
-
-                                <p class="small">SattaMatkaz, previously FixMatka, is the best Matka Guessing site in Satta Market. Play the Matka games with our free Matka guessing that we post using AI & ML Algorithms. The Matka game passing record is available in the Matka guessing charts. Play Matka Online with the fixed Matka numbers from the Matka Office by calling our Admin. Many VIP members have become Millionaires by playing the VIP Matka games. We predict the most accurate Matka result by using Astrology & Numerology. Try your luck today! Call us now, play the winning Matka numbers and become a Satta King today!</p>
-                            </div>
                         </div>
-                    </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="tabs-panel2" role="tabpanel" aria-labelledby="tabs-panel-2">
+                          Tab 2 content
+                        </div>
+                        <div class="tab-pane fade" id="tabs-panel3" role="tabpanel" aria-labelledby="tabs-panel-3">
+                          Tab 3 content
+                        </div>
+                      </div>
+
                 </div>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6">
-                    <div class="d-grid gap-2 py-3">
-                        <button type="button" class="btn bg-blur color-swapping-text color-turquoise">Play Online Matka <i class="bi bi-chevron-double-right"></i></button>
-                    </div>
-                </div>
-            </div>
+            
 
             <!-- Copyright -->
             <div class="row justify-content-center">
@@ -533,13 +548,12 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
-    <!-- Datepicker -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- Date Input take todays date -->
     <script>
-        $(function(){
-            $('#datepicker').datepicker();
-        });
-    </script>
+        const today = new Date().toISOString().substr(0, 10);
+        document.getElementById("startDate").value = today;
+        document.getElementById("endDate").value = today;
+   </script>
 
     <script>
         // Function to get the current date and time

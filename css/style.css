@@ -133,6 +133,10 @@ p{
     background-color: var(--theme-black) !important;
 }
 
+.bg-turquoise {
+    background-color: var(--theme-turquoise) !important;
+}
+
 .radius-0 {
     border-radius: 0;
 }
@@ -335,8 +339,118 @@ input[type="date"].custom-date-picker::-webkit-calendar-picker-indicator {
 }
 /* Custom Tabs Panel - Ends */
 
+.panel-days .day-divider{
+    border-bottom: 1px solid rgba(88, 130, 193, 0.5);
+    border-right: 1px solid rgba(88, 130, 193, 0.5);
+}
 
+.panel-days:last-child .day-divider{
+    border-right: none;
+}
 
+.panel-days .row:last-child .day-divider{
+    border-bottom: none;
+}
+
+.min-w-450{
+    min-width: 450px;
+}
+
+.divider-right{
+    border-right: 1px solid rgba(88, 130, 193, 0.5);
+}
+
+/* Reacted Icon */
+.react-icon{
+    position: absolute;
+    left: 50px;
+    bottom: -18px;
+    z-index: 99;
+}
+
+/* Emoji icon panel */
+.icon-panel{
+    max-width: 420px;
+    min-width: 300px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    z-index: -550;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.icon-panel.visible{
+    position: absolute;
+    bottom: -40px;
+    z-index: 550;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* Reaction-panel */
+.reaction-panel{
+    position: fixed;
+    bottom: -150%;
+    z-index: -999;
+    left: 0;
+    transition: 0.5s;
+    left: 50%;
+    transition: 0.5s;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+}
+.reaction-panel-backdrop{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -990;
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.reaction-panel.visible{
+    bottom: 0;
+    z-index: 999;
+}
+.reaction-panel-backdrop.visible{
+    z-index: 990;
+    opacity: 1;
+}
+
+.reaction-panel .btn img{
+    width: 20px;
+}
+
+.reaction-panel .fancy-border{
+    width: 60px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--theme-turquoise);
+    margin: 1rem auto;
+}
+
+.users-list{
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.users-list li{
+    margin-bottom: 0.5rem;
+}
+.users-list img{
+    width: 16px;
+}
+.users-list .profile-photo{
+    width: 24px;
+}
 
 /* Responsive media queries - Starts */
 

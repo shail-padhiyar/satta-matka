@@ -372,7 +372,7 @@ input[type="date"].custom-date-picker::-webkit-calendar-picker-indicator {
 .icon-panel{
     max-width: 420px;
     min-width: 300px;
-    position: fixed;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: -40px;
@@ -383,8 +383,6 @@ input[type="date"].custom-date-picker::-webkit-calendar-picker-indicator {
 }
 
 .icon-panel.visible{
-    position: absolute;
-    bottom: -40px;
     z-index: 550;
     pointer-events: auto;
     opacity: 1;

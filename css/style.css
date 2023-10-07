@@ -40,11 +40,6 @@ p{
     margin: 0;
 }
 
-.extra-small{
-    font-size: 0.7rem;
-}
-
-
 .btn{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -109,6 +104,14 @@ p{
     border-top: 25px solid transparent;
     border-left: 12px solid rgba(88, 130, 193, 0.50);
     border-bottom: 25px solid transparent;
+}
+
+.small{
+    font-size: 0.8rem;
+}
+
+.extra-small{
+    font-size: 0.7rem;
 }
 
 .color-primary {
@@ -382,6 +385,10 @@ input[type="date"].custom-date-picker::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
 
+.icon-panel img{
+    width: 24px;
+}
+
 .icon-panel.visible{
     z-index: 550;
     pointer-events: auto;
@@ -414,6 +421,10 @@ input[type="date"].custom-date-picker::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
 
+.reaction-panel .btn{
+    color: var(--theme-turquoise);
+}
+
 .reaction-panel.visible{
     bottom: 0;
     z-index: 999;
@@ -442,6 +453,14 @@ input[type="date"].custom-date-picker::-webkit-calendar-picker-indicator {
 
 .users-list li{
     margin-bottom: 0.5rem;
+    display: flex;
+}
+.reaction-counting{
+    display: flex;
+    margin-left: auto;
+}
+.reaction-counting p{
+    margin-left: 8px;
 }
 .users-list img{
     width: 16px;

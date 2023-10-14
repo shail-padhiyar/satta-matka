@@ -107,7 +107,7 @@
                                     <div class="col-1 px-2">
                                         <p class="bg-blur radius-sm text-center">9</p>
                                     </div>
-                                    
+
                                 </div>
 
                                 <div class="row mb-3 flex-row align-items-center">
@@ -144,7 +144,7 @@
                                     <div class="col-1 px-2">
                                         <button class="btn p-0 text-white small radius-sm text-center number-btn">210</button>
                                     </div>
-                                    
+
                                 </div>
 
                                 <div class="row mb-3 flex-row align-items-center">
@@ -181,7 +181,7 @@
                                     <div class="col-1 px-2">
                                         <button class="btn p-0 text-white small radius-sm text-center number-btn">20</button>
                                     </div>
-                                    
+
                                 </div>
 
                                 <div class="row flex-row align-items-center">
@@ -218,7 +218,7 @@
                                     <div class="col-1 px-2">
                                         <button class="btn p-0 text-white small radius-sm text-center number-btn">210</button>
                                     </div>
-                                    
+
                                 </div>
 
                             </div>
@@ -226,9 +226,9 @@
 
                     </div>
 
-                    <div class="react-icon">
+                    <!-- <div class="react-icon">
                         <button class="btn btn-link p-0"><img src="assets/Heart.svg" alt="Heart"></button>
-                    </div>
+                    </div> -->
 
                     <div class="icon-panel radius-md bg-turquoise p-3">
                         <div class="row">
@@ -251,8 +251,21 @@
                                     <p class="extra-small">Cancel</p>
                                 </button>
                             </div>
-                            
+
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="review-panel bg-blur p-2 radius-md">
+                        <button class="btn btn-primary py-1 px-2 me-2 review-btn text-white me-3">Review</button>
+                        <div class="divider mt-3 d-sm-none"></div>
+                        <button class="btn text-white p-0 me-2">All <span class="small color-turquoise">(538)</span></button>
+                        <button class="btn p-0 me-"><img src="assets/Open.svg" alt="Open"> <span class="small">(140)</span></button>
+                        <button class="btn p-0 me-2"><img src="assets/Close.svg" alt="Close"> <span class="small">(282)</span></button>
+                        <button class="btn p-0"><img src="assets/Close-red.svg" alt="Close-red"> <span class="small">(116)</span></button>
                     </div>
                 </div>
             </div>
@@ -570,11 +583,11 @@
 
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="reaction-panel-backdrop"></div>
-           
+
 
             <div class="row justify-content-center mt-5">
                 <div class="col-md-12">
@@ -599,16 +612,16 @@
 
     <!-- Date Input take todays date -->
     <script>
-        $(".react-icon").click(function(){
+        $(".review-btn").click(function() {
             $(".reaction-panel").addClass("visible");
             $(".reaction-panel-backdrop").addClass("visible");
         });
 
-        $(".reaction-panel-backdrop").click(function(){
+        $(".reaction-panel-backdrop").click(function() {
             $(".reaction-panel").removeClass("visible");
             $(".reaction-panel-backdrop").removeClass("visible");
         });
-   </script>
+    </script>
 
     <script>
         // $(".add-action .bg-blur").click(function(){
@@ -620,14 +633,14 @@
         // });
 
 
-        $(".number-btn").click(function(){
+        $(".number-btn").click(function() {
             $(".icon-panel").addClass("visible");
             var buttonText = $(this).text();
 
             $("#numberLabel").text("Number: " + buttonText);
         });
 
-        $(".icon-panel .btn").click(function(){
+        $(".icon-panel .btn").click(function() {
             $(".icon-panel").removeClass("visible");
         });
     </script>

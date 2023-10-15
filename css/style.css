@@ -423,6 +423,15 @@ input[type="date"].custom-date-picker::-webkit-calendar-picker-indicator {
     opacity: 1;
 }
 
+.icon-panel .btn {
+    border-radius: 0;
+    border: 0;
+}
+
+.icon-panel .btn:hover {
+    color: var(--theme-turquoise);
+}
+
 
 /* Reaction-panel */
 
